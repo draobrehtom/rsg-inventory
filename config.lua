@@ -10,3 +10,15 @@ Config.CleanupDropTime = 15 * 60 -- How many seconds it takes for drops to be un
 Config.MaxDropViewDistance = 12.5 -- The distance in GTA Units that a drop can be seen
 Config.UseItemDrop = false -- This will enable item object to spawn on drops instead of markers
 Config.ItemDropObject = `prop_nigel_bag_pickup` -- if Config.UseItemDrop is true, this will be the prop that spawns for the item
+
+-- Temporary fix for: https://github.com/qbcore-framework/qb-inventory/issues/461
+Config.RestrictedItems = {
+    ['your_super_donation_item1'] = true,
+    ['your_super_donation_item2'] = true,
+    ['your_super_donation_item3'] = true,
+}
+Config.MinimalPriceForItem = {
+    ['some_important_item1'] = 100,
+    ['some_important_item2'] = 100,
+    ['some_important_item3'] = 100,
+}
